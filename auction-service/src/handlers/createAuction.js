@@ -39,13 +39,7 @@ async function createAuction(event, context) {
   };
 }
 
-// export const handler = middy(createAuction);
-// const middlewares = [httpJsonBodyParser(), httpEventNormalizer(), httpErrorHandler()]
 export const handler = middy(createAuction);
-  // .use(httpJsonBodyParser()) 
-  // .use(httpEventNormalizer()) 
-  // .use(httpErrorHandler());
 
-// module.exports = { handler }
 
 
