@@ -39,7 +39,7 @@ async function createAuction(event, context) {
   };
 }
 
-export const handler = middy(createAuction);
+export const handler = createAuction;
 
 
 
