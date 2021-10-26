@@ -4,7 +4,8 @@
   "description": "Auction Serverless App",
   "scripts": {
     "deploy": "sls deploy -v",
-    "deployjs": "sls deploy -f createAuction -v"
+    "deployjs": "sls deploy -f createAuction -v",
+    "invoke": "sls invoke -f processAuctions -l"
   },
   "author": "Franck Kabasele",
   "license": "MIT",
