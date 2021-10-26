@@ -4,7 +4,7 @@ import createError from 'http-errors';
 
 const dynamodb = new AWS.DynamoDB.DocumentClient();
 
-async function getAuctions(id) {
+async function getAuctions(event, context) {
   let auctions;
 
   try {
