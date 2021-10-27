@@ -27,6 +27,7 @@ functions:
       - http:
           method: POST
           path: /auction
+          authorizer: arn:aws:lambda:us-east-1:988899761172:function:auth-service-dev-auth
 
   getAuctions:
     handler: src/handlers/getAuctions.handler
@@ -34,6 +35,7 @@ functions:
       - http:
           method: GET
           path: /auctions
+          authorizer: arn:aws:lambda:us-east-1:988899761172:function:auth-service-dev-auth
 
   getAuction:
     handler: src/handlers/getAuction.handler
@@ -41,6 +43,7 @@ functions:
       - http:
           method: GET
           path: /auction/{id}
+          authorizer: arn:aws:lambda:us-east-1:988899761172:function:auth-service-dev-auth
 
   placeBid:
     handler: src/handlers/placeBid.handler
@@ -48,6 +51,7 @@ functions:
       - http:
           method: PATCH
           path: auction/{id}/bid
+          authorizer: arn:aws:lambda:us-east-1:988899761172:function:auth-service-dev-auth
 
   processAuctions:
     handler: src/handlers/processAuctions.handler
